@@ -471,8 +471,16 @@
 
 // 22 MakeUpperCase
 
-function makeUpperCase (str) {
-  return str.toUpperCase ();
-}
+// function makeUpperCase (str) {
+//   return str.toUpperCase ();
+// }
 
-console.log (makeUpperCase ('qqqq'));
+// console.log (makeUpperCase ('qqqq'));
+
+// 23 Convert an array of strings to array of numbers
+
+// function toNumberArray (stringarray) {
+//   return stringarray.map (ele => Number (ele));
+// }
+
+// console.log (toNumberArray (['1', '2', '3']));
