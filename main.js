@@ -487,10 +487,26 @@
 
 //  24 Sum Mixed Array
 
-function sumMix (x) {
-  return x
-    .map (ele => +ele)
-    .reduce ((accumulator, currentValue) => accumulator + currentValue);
-}
+// function sumMix (x) {
+//   return x
+//     .map (ele => +ele)
+//     .reduce ((accumulator, currentValue) => accumulator + currentValue);
+// }
 
-console.log (sumMix (['1', '2', '3']));
+// console.log (sumMix (['1', '2', '3']));
+
+// 25 The Feast of Many Beasts
+
+function feast (beast, dish) {
+  let firstElement1 = beast[0];
+  let lastElement1 = beast[beast.length - 1];
+  let beastStr = `${firstElement1}${lastElement1}`;
+
+  // Get the first and last character of the dish string
+  let firstElement2 = dish[0];
+  let lastElement2 = dish[dish.length - 1];
+  let dishStr = `${firstElement2}${lastElement2}`;
+
+  // Compare the resulting strings
+  return beastStr === dishStr;
+}
