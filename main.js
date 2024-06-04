@@ -513,21 +513,26 @@
 
 // 26 Vowel Count
 
-function getCount (str) {
-  let newArray = str.split ('');
-  let count = 0;
-  for (let i = 0; i < newArray.length; i++) {
-    if (
-      newArray[i] === 'a' ||
-      newArray[i] === 'e' ||
-      newArray[i] === 'e' ||
-      newArray[i] === 'o' ||
-      newArray[i] === 'u'
-    ) {
-      count++;
-    }
-  }
-  return count;
-}
+// function getCount (str) {
+//   let newArray = str.split ('');
+//   let count = 0;
+//   for (let i = 0; i < newArray.length; i++) {
+//     if (
+//       newArray[i] === 'a' ||
+//       newArray[i] === 'e' ||
+//       newArray[i] === 'e' ||
+//       newArray[i] === 'o' ||
+//       newArray[i] === 'u'
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-console.log (getCount (' ab r ac a da bra'));
+// function getCount (str) {
+//   const vowels = 'aeiou';
+//   return str.split ('').filter (element => vowels.includes (element)).length;
+// }
+
+// console.log (getCount (' ab r ac a da bra oo'));
