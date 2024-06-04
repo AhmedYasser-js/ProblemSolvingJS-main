@@ -448,17 +448,23 @@
 
 //  20 Sum without highest and lowest number
 
-function sumArray (array) {
-  if (!Array.isArray (array) || array.length <= 2) {
-    return 0;
-  }
+// function sumArray (array) {
+//   if (!Array.isArray (array) || array.length <= 2) {
+//     return 0;
+//   }
 
-  return array
-    .sort ((a, b) => a - b)
-    .slice (1, -1)
-    .reduce ((accumulator, currentValue) => accumulator + currentValue, 0);
-}
+//   return array
+//     .sort ((a, b) => a - b)
+//     .slice (1, -1)
+//     .reduce ((accumulator, currentValue) => accumulator + currentValue, 0);
+// }
 
-console.log (sumArray (null));
+// console.log (sumArray (null));
 
 // console.log (!Array.isArray (44));
+
+// 21 Simple multiplication
+
+// function simpleMultiplication (number) {
+//   return number % 2 == 0 ? number * 8 : number * 9;
+// }
