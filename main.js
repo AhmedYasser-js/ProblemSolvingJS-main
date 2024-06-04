@@ -497,16 +497,37 @@
 
 // 25 The Feast of Many Beasts
 
-function feast (beast, dish) {
-  let firstElement1 = beast[0];
-  let lastElement1 = beast[beast.length - 1];
-  let beastStr = `${firstElement1}${lastElement1}`;
+// function feast (beast, dish) {
+//   let firstElement1 = beast[0];
+//   let lastElement1 = beast[beast.length - 1];
+//   let beastStr = `${firstElement1}${lastElement1}`;
 
-  // Get the first and last character of the dish string
-  let firstElement2 = dish[0];
-  let lastElement2 = dish[dish.length - 1];
-  let dishStr = `${firstElement2}${lastElement2}`;
+//   // Get the first and last character of the dish string
+//   let firstElement2 = dish[0];
+//   let lastElement2 = dish[dish.length - 1];
+//   let dishStr = `${firstElement2}${lastElement2}`;
 
-  // Compare the resulting strings
-  return beastStr === dishStr;
+//   // Compare the resulting strings
+//   return beastStr === dishStr;
+// }
+
+// 26 Vowel Count
+
+function getCount (str) {
+  let newArray = str.split ('');
+  let count = 0;
+  for (let i = 0; i < newArray.length; i++) {
+    if (
+      newArray[i] === 'a' ||
+      newArray[i] === 'e' ||
+      newArray[i] === 'e' ||
+      newArray[i] === 'o' ||
+      newArray[i] === 'u'
+    ) {
+      count++;
+    }
+  }
+  return count;
 }
+
+console.log (getCount (' ab r ac a da bra'));
