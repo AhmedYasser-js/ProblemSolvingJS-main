@@ -468,3 +468,11 @@
 // function simpleMultiplication (number) {
 //   return number % 2 == 0 ? number * 8 : number * 9;
 // }
+
+// 22 MakeUpperCase
+
+function makeUpperCase (str) {
+  return str.toUpperCase ();
+}
+
+console.log (makeUpperCase ('qqqq'));
