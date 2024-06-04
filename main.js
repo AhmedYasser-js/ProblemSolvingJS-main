@@ -484,3 +484,13 @@
 // }
 
 // console.log (toNumberArray (['1', '2', '3']));
+
+//  24 Sum Mixed Array
+
+function sumMix (x) {
+  return x
+    .map (ele => +ele)
+    .reduce ((accumulator, currentValue) => accumulator + currentValue);
+}
+
+console.log (sumMix (['1', '2', '3']));
